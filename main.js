@@ -3,7 +3,14 @@ const url = require('url')
 const path = require('path')
 
 function createWindow () {
-  const mainWindow = new BrowserWindow({ width: 800, height: 600 })
+  const mainWindow = new BrowserWindow({
+    width: 415,
+    height: 750,
+    useContentSize: true,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
 
   if (process.argv[2] === 'dev') {
     mainWindow.loadURL('http://localhost:8080')

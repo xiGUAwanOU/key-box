@@ -19,8 +19,13 @@ module.exports = {
   snapshotSerializers: [
     'jest-serializer-vue'
   ],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/dist/',
+    '/release/'
+  ],
   testMatch: [
-    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
+    '**/tests/**/*.spec.js'
   ],
   testURL: 'http://localhost/',
   watchPlugins: [
