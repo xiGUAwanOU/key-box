@@ -8,7 +8,7 @@
     <div class="account-list-container">
       <kb-input type="text" label="Search" v-model="search"/>
       <account-list
-        :accounts="accounts"
+        :accounts="accountsForDisplaying"
         :selected-account="selectedAccount"
         @select="changeSelectedAccount"
       />
@@ -51,6 +51,23 @@ export default {
       selectedAccount: null,
       editingSelected: false,
       accounts: []
+    }
+  },
+
+  computed: {
+    accountsForDisplaying () {
+      const copiedAccounts = [...this.accounts]
+      return copiedAccounts.sort((account1, account2) => {
+        const name1 = account1.name.toLowerCase()
+        const name2 = account2.name.toLowerCase()
+        if (name1 < name2) {
+          return -1
+        } else if (name1 > name2) {
+          return 1
+        } else {
+          return 0
+        }
+      }).filter(account => account.name.toLowerCase().includes(this.search))
     }
   },
 
