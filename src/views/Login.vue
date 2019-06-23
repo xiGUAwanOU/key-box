@@ -7,6 +7,7 @@
       errorMessage="Password incorrect!"
       :has-error="error"
       v-model="password"
+      @keyup.native.enter="unlock"
     />
     <kb-button icon="unlock-alt" @click="unlock">Unlock</kb-button>
   </div>

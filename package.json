@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit",
     "electron": "electron . dev",
     "clean": "rm -rf dist release",
-    "package": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --platform=darwin,linux,win32 --arch=x64 --prune=true --out=release"
+    "package": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --out=release"
   },
   "dependencies": {
     "core-js": "^2.6.5",
