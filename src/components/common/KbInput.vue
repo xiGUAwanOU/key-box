@@ -3,7 +3,7 @@
     <label>
       <span class="kb-label">{{ label }}</span>
       <div class="kb-inner-input-container">
-        <input class="kb-inner-input" :type="type" :value="value" @input="onInput">
+        <input class="kb-inner-input" :type="type" :value="value" @input="onInput" autofocus>
         <div class="kb-inner-input-appended">
           <slot name="appended"/>
         </div>
