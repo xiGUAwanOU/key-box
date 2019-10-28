@@ -1,5 +1,7 @@
 # key-box
 
+![](src/assets/desktop-64x64.png)
+
 ## Project setup
 ```
 npm install
