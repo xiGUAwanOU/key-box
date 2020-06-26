@@ -67,7 +67,7 @@ export default {
         } else {
           return 0
         }
-      }).filter(account => account.name.toLowerCase().includes(this.search))
+      }).filter(account => account.name.toLowerCase().includes(this.search.toLowerCase()))
     }
   },
 
