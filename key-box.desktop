@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Key Box
+Exec=/path/to/key-box/release/key-box-linux-x64/key-box
+Icon=/path/to/key-box/src/assets/desktop.png
+Terminal=false
+Categories=Application
+Type=Application
