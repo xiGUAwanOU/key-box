@@ -6,7 +6,11 @@
       <input ref="hiddenFileInput" type="file" hidden @change="importAccounts">
     </div>
     <div class="account-list-container">
-      <kb-input type="text" label="Search" v-model="search"/>
+      <kb-input type="text" label="Search" v-model="search">
+        <template slot="appended">
+          <kb-button icon="backspace" @click="clearSearch" />
+        </template>
+      </kb-input>
       <account-list
         :accounts="accountsForDisplaying"
         :selected-account="selectedAccount"
@@ -78,6 +82,10 @@ export default {
   methods: {
     async reload () {
       this.accounts = await AccountService.getAll()
+    },
+
+    clearSearch () {
+      this.search = ''
     },
 
     addNewAccount () {

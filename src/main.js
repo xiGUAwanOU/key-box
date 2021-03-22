@@ -5,16 +5,17 @@ import routes from '@/routes'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
-  faEdit,
-  faTrashAlt,
+  faBackspace,
   faCheck,
-  faTimes,
-  faEyeSlash,
-  faEye,
-  faDice,
   faCopy,
-  faPlusCircle,
+  faDice,
+  faEdit,
+  faEye,
+  faEyeSlash,
   faFileImport,
+  faPlusCircle,
+  faTrashAlt,
+  faTimes,
   faUnlockAlt
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -31,16 +32,17 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 library.add(
-  faEdit,
-  faTrashAlt,
+  faBackspace,
   faCheck,
-  faTimes,
-  faEyeSlash,
-  faEye,
-  faDice,
   faCopy,
-  faPlusCircle,
+  faDice,
+  faEdit,
+  faEye,
+  faEyeSlash,
   faFileImport,
+  faPlusCircle,
+  faTrashAlt,
+  faTimes,
   faUnlockAlt
 )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
