@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "main": "main.js",
   "private": true,
+  "engines": {
+    "node": ">=15",
+    "npm": ">=7"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

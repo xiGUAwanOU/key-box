@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .account-list {
-  height: 290px;
+  height: 300px;
   border: 1px solid var(--theme-color-2);
   overflow-y: scroll;
 }

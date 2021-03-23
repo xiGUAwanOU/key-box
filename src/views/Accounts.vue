@@ -144,7 +144,7 @@ export default {
 }
 
 .account-details-container {
-  height: 320px;
+  height: 300px;
   margin-top: 0.5em;
   border: 1px solid var(--theme-color-2);
   padding: 0.5rem;
