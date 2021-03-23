@@ -9,7 +9,8 @@
     "lint": "vue-cli-service lint",
     "electron": "electron . dev",
     "clean": "rm -rf dist release",
-    "release:win": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --icon=public/favicon.ico --out=release"
+    "release:mac": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --icon=public/icon.icns --out=release",
+    "release:win": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --icon=public/icon.ico --out=release"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
