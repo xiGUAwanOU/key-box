@@ -9,8 +9,10 @@ npm install
 
 ## Compile and build
 ```
-npm run package
+npm run release:<platform>
 ```
+
+The concrete value of `<platform>` can be `win`, `mac` or `linux`.
 
 ## Run application
 ```
