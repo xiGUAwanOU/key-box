@@ -10,7 +10,8 @@
     "electron": "electron . dev",
     "clean": "rm -rf dist release",
     "release:mac": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --icon=public/icon.icns --out=release",
-    "release:win": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --icon=public/icon.ico --out=release"
+    "release:win": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --icon=public/icon.ico --out=release",
+    "release:linux": "npm run build && cp main.js package.json dist && electron-packager dist --overwrite --arch=x64 --prune=true --out=release && ./post-release-linux.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
